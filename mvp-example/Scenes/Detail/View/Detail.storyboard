@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sma-kD-acz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail Controller-->
+        <scene sceneID="ONc-Wt-9Bs">
+            <objects>
+                <viewController id="sma-kD-acz" customClass="DetailController" customModule="mvp_example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CPa-Zk-3NE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Us3-eQ-hrQ">
+                                <rect key="frame" x="16" y="179" width="343" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cl3-Xd-eOs">
+                                <rect key="frame" x="16" y="219" width="343" height="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V3q-Yj-HpS">
+                                <rect key="frame" x="137" y="51" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="8pY-1G-PFV"/>
+                                    <constraint firstAttribute="height" constant="100" id="M0T-LJ-6r6"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sFd-SG-zOM" firstAttribute="trailing" secondItem="Us3-eQ-hrQ" secondAttribute="trailing" constant="16" id="7tU-Rs-VLr"/>
+                            <constraint firstItem="V3q-Yj-HpS" firstAttribute="top" secondItem="sFd-SG-zOM" secondAttribute="top" constant="31" id="Zxl-c1-9jy"/>
+                            <constraint firstItem="Us3-eQ-hrQ" firstAttribute="top" secondItem="V3q-Yj-HpS" secondAttribute="bottom" constant="28" id="bkb-uY-rjd"/>
+                            <constraint firstItem="sFd-SG-zOM" firstAttribute="trailing" secondItem="cl3-Xd-eOs" secondAttribute="trailing" constant="16" id="cV9-RN-fuL"/>
+                            <constraint firstItem="cl3-Xd-eOs" firstAttribute="leading" secondItem="sFd-SG-zOM" secondAttribute="leading" constant="16" id="rSE-tQ-jxs"/>
+                            <constraint firstItem="Us3-eQ-hrQ" firstAttribute="leading" secondItem="sFd-SG-zOM" secondAttribute="leading" constant="16" id="rdJ-Su-Rcl"/>
+                            <constraint firstItem="cl3-Xd-eOs" firstAttribute="top" secondItem="Us3-eQ-hrQ" secondAttribute="bottom" constant="20" id="svA-vG-VVc"/>
+                            <constraint firstItem="V3q-Yj-HpS" firstAttribute="centerX" secondItem="sFd-SG-zOM" secondAttribute="centerX" id="uvV-bI-Qli"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sFd-SG-zOM"/>
+                    </view>
+                    <connections>
+                        <outlet property="listDescriptionLabel" destination="cl3-Xd-eOs" id="rkr-ET-Cdq"/>
+                        <outlet property="listImageView" destination="V3q-Yj-HpS" id="NP1-t2-sPR"/>
+                        <outlet property="listNameLabel" destination="Us3-eQ-hrQ" id="CTF-Ej-aQX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kaR-v3-F3n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="80.799999999999997" y="120.98950524737631"/>
+        </scene>
+    </scenes>
+</document>
